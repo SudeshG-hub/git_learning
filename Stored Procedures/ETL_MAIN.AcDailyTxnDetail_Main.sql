@@ -12,6 +12,8 @@ CREATE PROCEDURE [ETL_MAIN].[AcDailyTxnDetail_Main]
 	
 AS
 BEGIN
+
+--testing GIT Changes---
 	-- SET NOCOUNT ON added to prevent extra result sets from
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
