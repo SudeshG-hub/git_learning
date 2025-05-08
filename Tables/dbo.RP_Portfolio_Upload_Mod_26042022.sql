@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[RP_Portfolio_Upload_Mod_26042022]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[CustomerEntityID] [int] NULL,
+[UCIC_ID] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerID] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PAN_No] [varchar] (12) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankCode] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BorrowerDefaultDate] [datetime] NULL,
+[ExposureBucketName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankingArrangementName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LeadBankName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DefaultStatus] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RP_ApprovalDate] [datetime] NULL,
+[RPNatureName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[If_Other] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ImplementationStatus] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Actual_Impl_Date] [datetime] NULL,
+[RP_OutOfDateAllBanksDeadline] [datetime] NULL,
+[ChangeFields] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Remarks] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[AuthorisationStatus] [varchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL
+) ON [PRIMARY]
+GO

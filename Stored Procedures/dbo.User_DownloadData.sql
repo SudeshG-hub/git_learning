@@ -1,0 +1,74 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+
+CREATE PROCEDURE [dbo].[User_DownloadData]  
+ @Timekey INT  
+ ,@UserLoginId VARCHAR(100)  
+ ,@ExcelUploadId INT  
+ ,@UploadType VARCHAR(50)  
+ --,@Page SMALLINT =1       
+ --   ,@perPage INT = 30000     
+AS  
+  
+----DECLARE @Timekey INT=49999  
+---- ,@UserLoginId VARCHAR(100)='FNASUPERADMIN'  
+---- ,@ExcelUploadId INT=4  
+---- ,@UploadType VARCHAR(50)='Interest reversal'  
+  
+BEGIN  
+  SET NOCOUNT ON;  
+  
+  Select @Timekey=Max(Timekey) from dbo.SysDayMatrix    
+    where  Date=cast(getdate() as Date)  
+        PRINT @Timekey    
+  
+  --DECLARE @PageFrom INT, @PageTo INT     
+    
+  --SET @PageFrom = (@perPage*@Page)-(@perPage) +1    
+  --SET @PageTo = @perPage*@Page    
+  
+IF (@UploadType='User Upload')  
+  
+BEGIN  
+    
+  --SELECT * FROM(  
+  SELECT 'Details' as TableName, 
+ UploadID,
+						UserLoginID,
+						UserName,
+						UserRoleAlt_Key,
+						C.DeptGroupCode as DepartmentName,
+						MobileNo,
+						Email_ID,
+						Extension,
+						IsChecker,
+						IsChecker2,
+						Activate,
+						Designation
+   FROM DimUserInfo_Mod A 
+   Left Join DimUserDeptGroup C On A.DeptGroupCode=C.DeptGroupId
+   and C.EffectiveFromTimeKey<=@Timekey AND C.EffectiveToTimeKey>=@Timekey   
+  WHERE UploadId=@ExcelUploadId  
+  AND A.EffectiveFromTimeKey<=@Timekey AND A.EffectiveToTimeKey>=@Timekey    
+  
+  
+    
+  
+ 
+  
+    
+  
+   
+  
+END  
+  
+  
+  
+END  
+
+
+GO

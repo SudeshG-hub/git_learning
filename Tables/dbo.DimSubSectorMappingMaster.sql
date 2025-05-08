@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[DimSubSectorMappingMaster]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[SubSectorMappingAlt_Key] [int] NULL,
+[SubSectorAlt_Key] [int] NULL,
+[SourceAlt_Key] [int] NULL,
+[SubSectorNameOrderKey] [tinyint] NULL,
+[SubSectorName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubSectorShortName] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubSectorShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubSectorGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubSectorSubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubSectorSegment] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubSectorValidCode] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CIBILBusinessCategory] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysSubSectorCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysSubSectorName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysSubSectorCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysSectorCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [datetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [datetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [datetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[Remarks] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

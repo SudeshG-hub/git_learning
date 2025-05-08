@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[AdvAcOtherDetail_Mod]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[AccountEntityId] [int] NOT NULL,
+[GovGurAmt] [decimal] (16, 2) NULL,
+[SplCatg1Alt_Key] [smallint] NULL,
+[SplCatg2Alt_Key] [smallint] NULL,
+[RefinanceAgencyAlt_Key] [smallint] NULL,
+[RefinanceAmount] [decimal] (16, 2) NULL,
+[BankAlt_Key] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TransferAmt] [decimal] (16, 2) NULL,
+[ProjectId] [int] NULL,
+[ConsortiumId] [int] NULL,
+[RefSystemAcId] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [char] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[MocStatus] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MocDate] [smalldatetime] NULL,
+[SplCatg3Alt_Key] [smallint] NULL,
+[SplCatg4Alt_Key] [smallint] NULL,
+[MocTypeAlt_Key] [int] NULL,
+[GovGurExpDt] [date] NULL,
+[ChangeFields] [varchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

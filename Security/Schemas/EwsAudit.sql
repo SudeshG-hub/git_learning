@@ -1,0 +1,3 @@
+CREATE SCHEMA [EwsAudit]
+AUTHORIZATION [dbo]
+GO

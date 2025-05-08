@@ -1,0 +1,43 @@
+CREATE TABLE [CurDat].[ADVCUSTCAL]
+(
+[ENTITYKEY] [bigint] NOT NULL IDENTITY(1, 1),
+[BranchCode] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UCIF_ID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerEntityID] [int] NULL,
+[ParentCustomerID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RefCustomerID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustSegmentCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcAssetClassAlt_Key] [smallint] NULL,
+[SysAssetClassAlt_Key] [smallint] NULL,
+[SMA_Class_Key] [int] NULL,
+[PNPA_Class_Key] [int] NULL,
+[PrvQtrRV] [decimal] (16, 2) NULL,
+[CurntQtrRv] [decimal] (16, 2) NULL,
+[TotProvision] [decimal] (16, 2) NULL,
+[SrcNPA_Dt] [date] NULL,
+[SysNPA_Dt] [date] NULL,
+[DbtDt] [date] NULL,
+[LossDt] [date] NULL,
+[MOC_Dt] [date] NULL,
+[ErosionDt] [date] NULL,
+[SMA_Dt] [date] NULL,
+[PNPA_Dt] [date] NULL,
+[Asset_Norm] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgDeg] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgUpg] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgMoc] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgSMA] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgProcessing] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgErosion] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgPNPA] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgPercolation] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgInMonth] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlgDirtyRow] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DegDate] [date] NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CommonMocTypeAlt_Key] [smallint] NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [CurDat].[ADVCUSTCAL] ADD CONSTRAINT [PK__ADVCUSTC__03D131BCBB73B083] PRIMARY KEY CLUSTERED ([ENTITYKEY]) ON [PRIMARY]
+GO

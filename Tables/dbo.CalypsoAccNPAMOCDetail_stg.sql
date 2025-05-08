@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[CalypsoAccNPAMOCDetail_stg]
+(
+[SrNo] [int] NULL,
+[UploadID] [int] NULL,
+[SummaryID] [int] NULL,
+[SlNo] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccountID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[POSinRs] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestReceivableinRs] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AdditionalProvisionAbsoluteinRs] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RestructureFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RestructureDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FITLFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DFVAmount] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RePossesssionFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RePossessionDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InherentWeaknessFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InherentWeaknessDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SARFAESIFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SARFAESIDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnusualBounceFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnusualBounceDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnclearedEffectsFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnclearedEffectsDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FraudFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FraudDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MOCSource] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MOCReason] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[filename] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SourceAlt_Key] [tinyint] NULL
+) ON [PRIMARY]
+GO

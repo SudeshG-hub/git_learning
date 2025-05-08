@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[SECURITYDETAIL]
+(
+[REFCustomerId] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TOTALSECURITY] [decimal] (38, 0) NULL
+) ON [PRIMARY]
+GO

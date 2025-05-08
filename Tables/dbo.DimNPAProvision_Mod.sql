@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[DimNPAProvision_Mod]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[ProvisionAlt_Key] [int] NULL,
+[Segment] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProvisionRule] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SecurityApplicable] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProductAlt_Key] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProvisionName] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProvisionShortNameEnum] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProvisionSecured] [decimal] (5, 2) NULL,
+[ProvisionUnSecured] [decimal] (5, 2) NULL,
+[LowerDPD] [int] NULL,
+[UpperDPD] [int] NULL,
+[DB1_PROV] [decimal] (18, 0) NULL,
+[DB2_PROV] [decimal] (18, 0) NULL,
+[ProvProductCat] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RBIProvisionSecured] [decimal] (18, 0) NULL,
+[RBIProvisionUnSecured] [decimal] (18, 0) NULL,
+[AdditionalprovisionRBINORMS] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[ChangeFields] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Remarks] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [datetime] NULL,
+[ModifiedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [datetime] NULL,
+[ApprovedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [datetime] NULL
+) ON [PRIMARY]
+GO

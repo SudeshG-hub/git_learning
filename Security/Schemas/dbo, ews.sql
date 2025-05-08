@@ -1,0 +1,3 @@
+CREATE SCHEMA [dbo, ews]
+AUTHORIZATION [dbo]
+GO

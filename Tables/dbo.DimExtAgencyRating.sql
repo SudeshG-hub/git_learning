@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[DimExtAgencyRating]
+(
+[Rating_Key] [smallint] NOT NULL,
+[RatingAlt_Key] [smallint] NULL,
+[RatingAgencyAlt_Key] [smallint] NULL,
+[AgencyRating] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveDt] [date] NULL,
+[RiskWtAsset] [smallint] NULL,
+[MappingRating] [varchar] (8) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IncCategoryShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RatingShortName] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RatingShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RatingGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RatingSubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysRatingAgencyNameCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RatingValidCode] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysRatingCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysAgencyRating] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysAgencyRatingCode] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SecuritizedRatingFlag] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifyBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL
+) ON [PRIMARY]
+GO

@@ -1,0 +1,153 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+CREATE Proc [dbo].[RestructureDropDown]
+
+AS
+
+  BEGIN
+
+Declare @Timekey as Int
+
+Set @Timekey= (select Timekey from SysDataMatrix where currentstatus='C')
+
+	BEGIN
+	---  Drop Down for asset Class----
+	 --  Select
+  --        AssetClassAlt_Key
+		-- ,AssetClassName
+		-- ,'AssetClassList' As TableName
+		--from [dbo].[DimAssetClass]
+		--Where EffectiveFromTimeKey<=@TimeKey
+		--And EffectiveToTimeKey>=@TimeKey
+
+	---  Drop Down for BankingRelationship---- 
+		Select 
+		  ParameterAlt_Key
+		 ,ParameterName
+		,'BankingRelationship' As TableName
+		from DimParameter 
+		Where EffectiveFromTimeKey<=@TimeKey
+		And EffectiveToTimeKey>=@TimeKey
+		And DimParameterName='BankingRelationship'
+
+		---  Drop Down for CovidMoratorium---- 
+		--Select 
+		-- ParameterAlt_Key
+		--,ParameterName
+		--,'CovidMoratorium' As TableName
+		-- from DimParameter 
+		--Where EffectiveFromTimeKey<=@TimeKey
+		--And EffectiveToTimeKey>=@TimeKey
+		--And DimParameterName='DimYesNoNA'
+
+
+		---  Drop Down for CovidOTRCategory---- 
+
+		--Select 
+		-- ParameterAlt_Key
+		--,ParameterName
+		--,'CovidOTRCategory' As TableName
+		
+		-- from DimParameter 
+		--Where EffectiveFromTimeKey<=@TimeKey
+		--And EffectiveToTimeKey>=@TimeKey
+		--And DimParameterName='Covid - OTR Category'
+
+		---  Drop Down for RestructureFacility---- 
+
+		Select 
+		 ParameterAlt_Key
+		,ParameterName
+		,'RestructureFacility' As TableName
+		from DimParameter 
+		Where EffectiveFromTimeKey<=@TimeKey
+		And EffectiveToTimeKey>=@TimeKey
+		And DimParameterName='RestructureFacility'
+
+		
+
+		---  Drop Down for InvestmentGrade---- 
+		Select 
+		 ParameterAlt_Key
+		,ParameterName
+		,'InvestmentGrade' As TableName
+		
+		 from DimParameter 
+		Where EffectiveFromTimeKey<=@TimeKey
+		And EffectiveToTimeKey>=@TimeKey
+		And DimParameterName='DimYesNoNA'
+		
+		---  Drop Down for StatusofMonitoringPeriod---- 
+
+
+		--Select 
+		--ParameterAlt_Key
+		--,ParameterName
+		--,'StatusofMonitoringPeriod' As TableName
+		-- from DimParameter 
+		--Where EffectiveFromTimeKey<=@TimeKey
+		--And EffectiveToTimeKey>=@TimeKey
+		--And DimParameterName='StatusofMonitoringPeriod'
+
+
+
+
+		---  Drop Down for StatusofSpecificPeriod---- 
+
+
+		Select 
+		ParameterAlt_Key
+		,ParameterName
+		,'StatusofSpecificPeriod' As TableName
+		 from DimParameter 
+		Where EffectiveFromTimeKey<=@TimeKey
+		And EffectiveToTimeKey>=@TimeKey
+		And DimParameterName='StatusofSpecificPeriod'
+
+		
+
+		---  Drop Down for TypeofRestructuring---- 
+
+		Select 
+		--Parameter_Key
+		ParameterAlt_Key
+		,ParameterName
+		,'TypeofRestructuring' As TableName
+		
+		 from DimParameter 
+		Where EffectiveFromTimeKey<=@TimeKey
+		And EffectiveToTimeKey>=@TimeKey
+		And DimParameterName='TypeofRestructuring'
+		and ParameterAlt_Key in (1,8,9,11)
+		
+--Select
+--          EWS_SegmentAlt_Key
+--		 ,EWS_SegmentName
+--		 ,'RevisedBusinessSegment' As TableName
+--		from DimSegment
+--		Where EffectiveFromTimeKey<=@TimeKey
+--		And EffectiveToTimeKey>=@TimeKey
+
+			---  Drop Down for TypeofRestructuring---- 
+
+			
+		Select 
+		--Parameter_Key
+		ParameterAlt_Key
+		,ParameterName
+		,'EquityConversionYN' As TableName
+		
+		 from DimParameter 
+		Where EffectiveFromTimeKey<=@TimeKey
+		And EffectiveToTimeKey>=@TimeKey
+		And DimParameterName='DimYesNo'
+
+
+		END
+
+	END
+GO

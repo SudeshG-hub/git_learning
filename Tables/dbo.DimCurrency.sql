@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[DimCurrency]
+(
+[Currency_Key] [smallint] NOT NULL,
+[CurrencyAlt_Key] [smallint] NOT NULL,
+[CurrencyCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrencyNameOrderKey] [tinyint] NULL,
+[CurrencyName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrencyShortName] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrencyShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrencyGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrencySubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrencySegment] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrencyValidCode] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysCurrencyCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysCurrencyName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysturrencyCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModifie] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[ApplicableForNewAc] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Currency2DigitCode] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

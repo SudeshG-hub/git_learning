@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[WillfulDefaulters_mod]
+(
+[Entity_Key] [int] NOT NULL IDENTITY(1, 1),
+[EntityId] [int] NULL,
+[ReportedByAlt_Key] [int] NULL,
+[CategoryofBankFIAlt_Key] [int] NULL,
+[ReportingBankFIAlt_Key] [int] NULL,
+[ReportingBranchAlt_Key] [int] NULL,
+[StateUTofBranchAlt_Key] [int] NULL,
+[CustomerID] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartyName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PAN] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ReportingSerialNo] [numeric] (16, 2) NULL,
+[RegisteredOfficeAddress] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OSAmountinlacs] [numeric] (16, 2) NULL,
+[WillfulDefaultDate] [date] NULL,
+[SuitFiledorNotAlt_Key] [int] NULL,
+[OtherBanksFIInvolvedAlt_Key] [int] NULL,
+[NameofOtherBanksFIAlt_Key] [int] NULL,
+[CustomerTypeAlt_Key] [int] NULL,
+[changes] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Remark] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[AuthorisationStatus] [varchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [date] NULL,
+[ModifiedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [date] NULL,
+[ApprovedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [date] NULL
+) ON [PRIMARY]
+GO

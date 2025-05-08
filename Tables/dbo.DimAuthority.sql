@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[DimAuthority]
+(
+[Authority_Key] [smallint] NOT NULL,
+[AuthorityAlt_Key] [smallint] NULL,
+[AuthorityOrderKey] [tinyint] NULL,
+[AuthorityName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorityShortName] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorityShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorityGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthoritySubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthoritySegment] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorityValidCode] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ExaminyAuthorityGroup] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ExaminyAuthorityOrder] [smallint] NULL,
+[SrcSysAuthorityCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysAuthorityName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysAuthorityLevelCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysAuthorityLevelName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysAuthorityCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysAuthorityLevelCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ApplicableForExtRating] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModifie] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL
+) ON [PRIMARY]
+GO

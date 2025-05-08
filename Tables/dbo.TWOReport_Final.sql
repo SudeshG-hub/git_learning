@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[TWOReport_Final]
+(
+[Report date] [nvarchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UCIC] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CIF ID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Customer Name] [varchar] (8000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Branch Code] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Branch Name] [varchar] (8000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Account No.] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Scheme Type] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Scheme Code] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Scheme Description] [varchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Account Segment Code] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Account Segment Description] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Facility] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Nature of Facility] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Opening Balance] [decimal] (18, 2) NOT NULL,
+[Addition] [decimal] (18, 2) NOT NULL,
+[Increase In Balance] [decimal] (19, 2) NULL,
+[Cash Recovery] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[Recovery from NPA Sale] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[Write-off] [int] NOT NULL,
+[Closing Balance POS] [decimal] (18, 2) NOT NULL,
+[Reduction in Balance] [decimal] (19, 2) NULL,
+[Reporting_Period] [date] NULL,
+[DPD] [int] NOT NULL,
+[NPA Date] [date] NULL,
+[Asset Classification] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Date of Technical Write-off] [date] NULL,
+[Host System] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Business Segment] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

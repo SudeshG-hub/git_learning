@@ -1,0 +1,3 @@
+CREATE SCHEMA [PmtTrack]
+AUTHORIZATION [dbo]
+GO

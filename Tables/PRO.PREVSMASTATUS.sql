@@ -1,0 +1,7 @@
+CREATE TABLE [PRO].[PREVSMASTATUS]
+(
+[TIMEKEY] [int] NULL,
+[CustomerAcID] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SMA_Class] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[IBPCACFlaggingDetail_12072022]
+(
+[Entity_Key] [int] NOT NULL IDENTITY(1, 1),
+[AccountFlagAlt_Key] [int] NULL,
+[SourceAlt_Key] [int] NULL,
+[AccountID] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerID] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerName] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FlagAlt_Key] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PoolID] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PoolName] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccountBalance] [decimal] (18, 2) NULL,
+[POS] [decimal] (18, 2) NULL,
+[InterestReceivable] [decimal] (18, 2) NULL,
+[ExposureAmount] [decimal] (18, 2) NULL,
+[IPBCOutDate] [date] NULL,
+[AuthorisationStatus] [varchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[Remark] [varchar] (250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SourceName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PoolType] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MaturityDate] [date] NULL,
+[IBPCMarkingDate] [date] NULL
+) ON [PRIMARY]
+GO

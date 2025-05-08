@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[AdvSecurityVehicleDetails_Mod]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[CustomerEntityId] [int] NULL,
+[AccountEntityID] [int] NULL,
+[SecurityEntityID] [int] NULL,
+[VehicleTypeAlt_key] [nvarchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MakeandModel] [nvarchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[VehicleRegNo] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[VehicleChesiNo] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[VehicleEngineNo] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FuelTypeAlt_Key] [smallint] NULL,
+[YearOfPurchase] [smallint] NULL,
+[PurchasePrice] [numeric] (9, 0) NULL,
+[YearOfManu] [int] NULL,
+[DepreciationDate] [date] NULL,
+[LatestDepreciatedValue] [numeric] (9, 0) NULL,
+[AuthorisationStatus] [char] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MocTypeAlt_Key] [int] NULL,
+[MocStatus] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MocDate] [smalldatetime] NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[ChangeFields] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

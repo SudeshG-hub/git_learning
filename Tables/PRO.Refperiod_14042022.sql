@@ -1,0 +1,27 @@
+CREATE TABLE [PRO].[Refperiod_14042022]
+(
+[Rule_Key] [smallint] NOT NULL,
+[RuleAlt_Key] [smallint] NULL,
+[RuleType] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BusinessRule] [varchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BusienssRuleName] [varchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ColumnName] [varchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RefValue] [varchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RefUnit] [varchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LogicSql] [varchar] (5000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[SourceSystemAlt_Key] [int] NULL,
+[IRACParameter] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Grade] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL
+) ON [PRIMARY]
+GO

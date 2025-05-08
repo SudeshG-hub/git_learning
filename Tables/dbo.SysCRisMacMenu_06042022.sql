@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[SysCRisMacMenu_06042022]
+(
+[EntityKey] [int] NULL,
+[MenuTitleId] [int] NULL,
+[DataSeq] [int] NULL,
+[MenuId] [int] NULL,
+[ParentId] [int] NULL,
+[MenuCaption] [nvarchar] (300) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ActionName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Viewpath] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ngController] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BusFld] [nvarchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ThirdGroup] [nvarchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ApplicableFor] [nvarchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Visible] [bit] NULL,
+[ReportId] [varchar] (400) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AvailableFor] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NonAllowOperation] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DeptGroupCode] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EnableMakerChecker] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthLevel] [varchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ResponseTimeDisplay] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Deptartment] [char] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SaveWithCER] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ExecutionCer] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccessLevel] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[GridApplicable] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Accordian] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

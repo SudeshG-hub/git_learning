@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[DIMSCHEME]
+(
+[Scheme_Key] [smallint] NOT NULL,
+[SchemeAlt_Key] [smallint] NOT NULL,
+[SchemeName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SchemeShortName] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SchemeShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SchemeGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SchemeSubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SchemeSegment] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SchemeValidCode] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RetailGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RetailSegmentsAlt_key] [smallint] NULL,
+[AssetClass] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BSR_Survey] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LbrCode] [int] NULL,
+[SAMISCode] [char] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NewFacilityAllowed] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysSchemeCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysSchemeName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysSchemeCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModifie] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL
+) ON [PRIMARY]
+GO

@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[DimAddressCategory]
+(
+[AddressCategory_Key] [smallint] NOT NULL,
+[AddressCategoryAlt_Key] [smallint] NULL,
+[AddressCategoryOrderKey] [smallint] NULL,
+[AddressCategoryName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AddressCategoryShortName] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AddressCategoryShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AddressCategoryGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AddressCategorySubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AddressCategorySegment] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsCompulsory] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AllowMultiple] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AddressCategoryValidCode] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysAddressCategoryCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysAddressCategoryName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysAddressCategoryCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubmitToCibil] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CibilCode] [varchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CibilDescription] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [date] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL
+) ON [PRIMARY]
+GO

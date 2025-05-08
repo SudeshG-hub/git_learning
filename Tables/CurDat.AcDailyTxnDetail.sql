@@ -1,0 +1,40 @@
+CREATE TABLE [CurDat].[AcDailyTxnDetail]
+(
+[ENTITYKEY] [bigint] NOT NULL,
+[Branchcode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerID] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerAcID] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[AccountEntityId] [int] NULL,
+[TxnDate] [date] NOT NULL,
+[TxnType] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TxnSubType] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TxnTime] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrencyAlt_Key] [int] NULL,
+[CurrencyConvRate] [decimal] (10, 5) NULL,
+[TxnAmount] [decimal] (16, 2) NULL,
+[TxnAmountInCurrency] [decimal] (16, 2) NULL,
+[ExtDate] [date] NULL,
+[TxnRefNo] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TxnValueDate] [date] NULL,
+[MnemonicCode] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Particular] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [datetime] NULL,
+[Remark] [varchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TrueCredit] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsProcessed] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Balance] [decimal] (18, 2) NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [CurDat].[AcDailyTxnDetail] ADD CONSTRAINT [CK__AcDailyTx__TxnDa__33CA93F7] CHECK (([TxnDate]>getdate()))
+GO
+ALTER TABLE [CurDat].[AcDailyTxnDetail] ADD CONSTRAINT [AcDailyTxnDetail_EntityKey] PRIMARY KEY NONCLUSTERED ([ENTITYKEY], [TxnDate]) ON [PRIMARY]
+GO
+CREATE CLUSTERED INDEX [AcDailyTxnDetail_ClsIdx] ON [CurDat].[AcDailyTxnDetail] ([ENTITYKEY]) ON [PRIMARY]
+GO

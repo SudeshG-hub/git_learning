@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[DimZone]
+(
+[Zone_Key] [smallint] NOT NULL,
+[ZoneAlt_Key] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[ZoneName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZoneShortName] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZoneShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZoneGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZoneSubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZoneSegment] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZoneValidCode] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RBI_Part_1] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RBI_Part_2] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysZoneCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysZoneName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysZoneCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifyBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[Zonal_Head_EmailId] [varchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DeputyZonal_Head_EmailId] [varchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

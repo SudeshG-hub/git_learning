@@ -1,0 +1,3 @@
+CREATE SCHEMA [DataUpload]
+AUTHORIZATION [dbo]
+GO

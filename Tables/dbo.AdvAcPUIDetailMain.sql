@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[AdvAcPUIDetailMain]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[CustomerID] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UCIFID] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProjectCategoryAlt_Key] [int] NULL,
+[ProjectSubCategoryAlt_key] [int] NULL,
+[ProjectOwnerShipAlt_Key] [int] NULL,
+[ProjectAuthorityAlt_key] [int] NULL,
+[OriginalDCCO] [date] NULL,
+[OriginalProjectCost] [decimal] (16, 2) NULL,
+[OriginalDebt] [decimal] (16, 2) NULL,
+[Debt_EquityRatio] [decimal] (16, 2) NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[AccountEntityId] [int] NULL,
+[AccountID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProjectSubCatDescription] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstLevelApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstLevelDateApproved] [smalldatetime] NULL
+) ON [PRIMARY]
+GO

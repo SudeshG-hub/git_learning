@@ -1,0 +1,3 @@
+CREATE SCHEMA [Cibil]
+AUTHORIZATION [dbo]
+GO

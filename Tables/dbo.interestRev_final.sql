@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[interestRev_final]
+(
+[Report Date] [nvarchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UCIC] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CIF ID] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Borrower Name] [varchar] (8000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Branch Code] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Branch Name] [varchar] (8000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Account No.] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Source System] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Facility] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Scheme Type] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Scheme Code] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Scheme Description] [varchar] (8000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Seg Code] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Segment Description] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Business Segment] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NPA Date] [date] NULL,
+[Outstanding] [decimal] (16, 2) NULL,
+[Principal Outstanding] [decimal] (18, 2) NOT NULL,
+[Asset Classification] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Source System Status] [varchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[interest Dues] [decimal] (18, 2) NOT NULL,
+[Penal Dues] [varchar] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[Other Dues] [decimal] (18, 2) NOT NULL,
+[interest accured but not due] [decimal] (17, 2) NULL,
+[penal accured but not due] [decimal] (16, 2) NOT NULL,
+[Credit Card interest Outstanding] [decimal] (18, 2) NOT NULL,
+[Credit Card other charges] [decimal] (18, 2) NOT NULL,
+[Credit Card GST/ST Outstanding] [decimal] (18, 2) NOT NULL,
+[Interest/Dividend on Bond/Debentures] [decimal] (16, 2) NOT NULL
+) ON [PRIMARY]
+GO

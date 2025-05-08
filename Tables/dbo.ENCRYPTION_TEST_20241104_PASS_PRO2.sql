@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[ENCRYPTION_TEST_20241104_PASS_PRO2]
+(
+[ID] [int] NULL,
+[NAME] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DESCRIPTION] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PAN_NO] [varbinary] (8000) NULL
+) ON [PRIMARY]
+GO

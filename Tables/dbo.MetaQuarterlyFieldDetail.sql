@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[MetaQuarterlyFieldDetail]
+(
+[CreaSta] [varchar] (7) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ModifyDt] [datetime] NULL,
+[UserID] [varchar] (8) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastUpdated] [timestamp] NOT NULL,
+[CODE] [int] NOT NULL,
+[FrmName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CtrlName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FldName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FldCaption] [varchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FldDataType] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FldLength] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FldGrdWidth] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FldSearch] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ErrorCheck] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DataSeq] [smallint] NULL,
+[FldGridView] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CriticalErrorType] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MsgFlag] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MsgDescription] [varchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ReportFieldNo] [int] NULL,
+[ScreenFieldNo] [int] NULL,
+[ViableForSCD2] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[RptCaption] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Editable] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ReferenceColumnName] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ReferenceTableName] [varchar] (80) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[XMLTableName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IsAmount] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MOC_Flag] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

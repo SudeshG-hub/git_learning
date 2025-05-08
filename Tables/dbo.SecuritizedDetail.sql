@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[SecuritizedDetail]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[SummaryID] [int] NULL,
+[PoolID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PoolName] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccountID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifyBy] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[ChangeFields] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[POS] [decimal] (18, 2) NULL,
+[InterestReceivable] [decimal] (18, 2) NULL,
+[SecuritizedExposureAmt] [decimal] (18, 2) NULL,
+[SecuritisationType] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OSBalance] [decimal] (18, 2) NULL,
+[SecuritisationExposureinRs] [decimal] (16, 2) NULL,
+[DateofSecuritisationreckoning] [date] NULL,
+[DateofSecuritisationmarking] [date] NULL,
+[MaturityDate] [date] NULL,
+[Action] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestAccruedinRs] [decimal] (18, 2) NULL
+) ON [PRIMARY]
+GO

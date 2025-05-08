@@ -1,0 +1,25 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROC [dbo].[AccountFlaggingUploadType_Prod]
+
+  
+AS
+  BEGIN
+
+  Declare @TimeKey as Int 
+
+	Set @TimeKey = (Select Timekey from SysDataMatrix where CurrentStatus='C')
+		
+	
+
+
+		Select ParameterAlt_Key
+		,ParameterName
+		,'UploadType' as Tablename 
+		from DimParameter where DimParameterName='UploadFLagType'
+		and ParameterAlt_Key in (1,9)
+		And EffectiveFromTimeKey<=@TimeKey And EffectiveToTimeKey>=@TimeKey
+	END
+GO

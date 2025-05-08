@@ -1,0 +1,2 @@
+CREATE USER [kmth] FOR LOGIN [kmth]
+GO

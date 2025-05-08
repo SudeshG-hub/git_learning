@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[DimPartitionTable]
+(
+[PartitionTbale_Key] [smallint] NOT NULL,
+[PartitionTbaleAlt_Key] [smallint] NULL,
+[PartitionTbaleName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionFreq] [char] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionTbaleShortName] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionTbaleShortNameEnum] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionTbaleGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionTbaleSubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionTbaleSegment] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionTbaleValidCode] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysPartitionTbaleCode] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysPartitionTbaleName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysPartitionTbaleCode] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DestSysPartitionTbaleValidCode`] [char] (1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifyBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[D2Ktimestamp] [timestamp] NOT NULL,
+[UniqueColumn] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PriKeyBaseCol] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionTbaleSchema] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ViewSchema] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartitionViewName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

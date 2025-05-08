@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[ppp]
+(
+[Sr# No#] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Account ID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Restructure Facility] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Revised Business Seg] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Disbursement Date] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Reference Date] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Invocation Date] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Date of Conversion into Equity] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Prin Rpymnt Start Date] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Intt Rpymnt Start Date] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Asset Class at Rstrctr] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NPA Date] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NPA Quarter] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Type of Restructuring] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Covid Moratoriam, MSME] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Covid - OTR Category] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Banking Relationship] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Date of Restructuring] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Restructuring Approving Auth] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Date of Ist Default on CRILIC] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Reporting Bank] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Date of Signing ICA] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[O/S as on Date of Rstrctr] [float] NULL,
+[POS as on Date of Rstrctr] [float] NULL,
+[Investment Grade] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Credit Provision, Rs] [float] NULL,
+[DFV Provision, Rs] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MTM Provision, Rs] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

@@ -1,0 +1,30 @@
+CREATE TABLE [dbo].[dimglproduct_au_02032022]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[SourceAlt_key] [int] NULL,
+[GLProductAlt_Key] [smallint] NULL,
+[ProductCode] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProductName] [varchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AssetGLCode_STD] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AssetGLCode_NPA] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestSuspenseNormal] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestReceivableNormal] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestIncomeNormal] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SuspendedInterestNormal] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestSuspensePenal] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestReceivablePenal] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestIncomePenal] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SuspendedInterestPenal] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Prov_Dr_GL] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Prov_Cr_GL] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModified] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL
+) ON [PRIMARY]
+GO

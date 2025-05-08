@@ -1,0 +1,3 @@
+CREATE SCHEMA [AuditTrail]
+AUTHORIZATION [dbo]
+GO

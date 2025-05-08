@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[DimAssetclassMapping_Mod]
+(
+[EntityKey] [int] NOT NULL IDENTITY(1, 1),
+[AssetClassMappingAlt_Key] [int] NULL,
+[SrcSysClassCode] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysClassName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AssetClassAlt_Key] [int] NULL,
+[AssetClassName] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AssetClassShortName] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AssetClassShortNameEnum] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AssetClassGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AssetClassSubGroup] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DPD_LowerValue] [int] NULL,
+[DPD_HigherValue] [int] NULL,
+[NPAAgeingBucket] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BankSecuredNorms] [int] NULL,
+[BankUnsecuredNorms] [int] NULL,
+[RBISecuredNorms] [int] NULL,
+[RBIUnsecuredNorms] [int] NULL,
+[AuthorisationStatus] [varchar] (2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EffectiveFromTimeKey] [int] NULL,
+[EffectiveToTimeKey] [int] NULL,
+[CreatedBy] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateCreated] [smalldatetime] NULL,
+[ModifiedBy] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateModifie] [smalldatetime] NULL,
+[ApprovedBy] [varchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DateApproved] [smalldatetime] NULL,
+[SourceAlt_Key] [int] NULL,
+[Changefields] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SrcSysGroup] [varchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO

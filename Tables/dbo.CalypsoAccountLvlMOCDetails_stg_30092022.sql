@@ -1,0 +1,33 @@
+CREATE TABLE [dbo].[CalypsoAccountLvlMOCDetails_stg_30092022]
+(
+[SlNo] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccountID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[POSinRs] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InterestReceivableinRs] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AdditionalProvisionAbsoluteinRs] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RestructureFlagYN] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RestructureDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FITLFlagYN] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DFVAmount] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RePossesssionFlagYN] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RePossessionDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InherentWeaknessFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[InherentWeaknessDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SARFAESIFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SARFAESIDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnusualBounceFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnusualBounceDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnclearedEffectsFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnclearedEffectsDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FraudFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FraudDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TwoFlag] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TwoDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TwoAmount] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SourceSystem] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MOCSource] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MOCReason] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[filname] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SourceAlt_Key] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO
